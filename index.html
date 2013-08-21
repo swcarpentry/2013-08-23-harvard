@@ -1,16 +1,16 @@
 ---
 layout: bootcamp
 root: .
-venue: Euphoric State University
-address: 123 College Street, Euphoria
-humandate: June 17-18, 2020
+venue: Harvard University
+address: Phillips Auditorium at the Center for Astrophysics, 60 Garden Street
+humandate: August 23-24, 2013
 humantime: 9:00 am - 4:30 pm
-startdate: 2020-06-17
-enddate: 2020-06-18
-latlng: 41.7901128,-87.6007318
+startdate: 2013-08-23
+enddate: 2013-08-24
+latlng: 42.381705,-71.127904
 registration: restricted
-instructor: ["Grace Hopper", "Alan Turing"]
-contact: random@software-carpentry.org
+instructor: ["Erik Bray", "Jessica McKellar", "R. David Murray", "Mike Selik"]
+contact: harvard@lists.software-carpentry.org
 ---
 {% include bootcamps/instructors.html %}
 {% include bootcamps/what.html %}
@@ -23,6 +23,17 @@ contact: random@software-carpentry.org
 
 <h2>Setup</h2>
 
+<p>
+The following is an overview of the software you will need for this
+bootcamp.  Below the overview are recommendations for specific operating
+systems.  We strongly recommend installing this software ahead of time
+so that the workshop can get off to a smooth start for everyone.  If you
+have trouble installing any of the recommended software please do not
+hesistate to contact the mailing list for this workshop and one of the
+instructors should be able to help you.  There may also be some time the
+morning of to help with any installation issues that may arise.
+</p>
+
 <div class="row-fluid">
   <div class="span6">
     {% include setup/overview-bash.html %}
@@ -34,38 +45,52 @@ contact: random@software-carpentry.org
   </div>
 </div>
 
-<hr/>
+<h3>Windows Setup</h3>
 
-<h2>Topics</h2>
+<p>
+The Git installer for Windows includes a simple UNIX-like environment for
+Windows.  This includes a Bash shell prompt which you can launch from the icon
+labeled "Git Bash.  As Git was originally developed for use on Linux it works
+best in that environment.  It's worth having this environment in Windows in
+part to provide a consistent command-line interface across all learners at
+the bootcamp.  It may also come in handy in the future so that you only have
+to learn one command-line environment (rather than learning a UNIX command
+line <em>and</em> the native Windows command line).
+</p>
 
 <div class="row-fluid">
   <div class="span6">
-    <h3><a href="lessons/shell.html">The Unix Shell</a></h3>
-    <ul>
-      <li>{% include guide-shell/filedir/title.md %}</li>
-      <li>{% include guide-shell/create/title.md %}</li>
-      <li>{% include guide-shell/pipefilter/title.md %}</li>
-      <li>{% include guide-shell/loop/title.md %}</li>
-      <li>{% include guide-shell/scripts/title.md %}</li>
-      <li>{% include guide-shell/find/title.md %}</li>
-    </ul>
+    {% include setup/windows-editor.html %}
   </div>
   <div class="span6">
-    <h3><a href="lessons/db.html">Databases</a></h3>
-    <ul>
-      <li>{% include guide-db/select/title.md %}</li>
-      <li>{% include guide-db/distinct/title.md %}</li>
-      <li>{% include guide-db/filter/title.md %}</li>
-      <li>{% include guide-db/calc/title.md %}</li>
-      <li>{% include guide-db/sort/title.md %}</li>
-      <li>{% include guide-db/null/title.md %}</li>
-      <li>{% include guide-db/aggregate/title.md %}</li>
-      <li>{% include guide-db/grouping/title.md %}</li>
-      <li>{% include guide-db/join/title.md %}</li>
-      <li>{% include guide-db/create/title.md %}</li>
-      <li>{% include guide-db/transactions/title.md %}</li>
-      <li>{% include guide-db/programming/title.md %}</li>
-    </ul>
+    {% include setup/windows-git.html %}
+    {% include setup/windows-python.html %}
+  </div>
+</div>
+
+<h3>Mac OSX Setup</h3>
+
+<div class="row-fluid">
+  <div class="span6">
+    {% include setup/macosx-bash.html %}
+    {% include setup/macosx-git.html %}
+  </div>
+  <div class="span6">
+    {% include setup/macosx-editor.html %}
+    {% include setup/macosx-python.html %}
+  </div>
+</div>
+
+<h3>Linux Setup</h3>
+
+<div class="row-fluid">
+  <div class="span6">
+    {% include setup/linux-bash.html %}
+    {% include setup/linux-editor.html %}
+  </div>
+  <div class="span6">
+    {% include setup/linux-git.html %}
+    {% include setup/linux-python.html %}
   </div>
 </div>
 
@@ -76,5 +101,4 @@ contact: random@software-carpentry.org
 <ul>
   <li><a href="{{page.root}}/lessons/ref/shell.html">The Unix Shell</a></li>
   <li><a href="{{page.root}}/lessons/ref/python.html">Python</a></li>
-  <li><a href="{{page.root}}/lessons/ref/sql.html">SQL</a></li>
 </ul>
