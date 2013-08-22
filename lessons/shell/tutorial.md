@@ -635,13 +635,18 @@ its "pager" on most systems).
 
 **Some commands in `less`**
 
-| key     | action |
-| ------- | ---------- |
-| "space" | to go forward |
-|  "b"    | to go backwarsd |
-|  "g"    | to go to the beginning |
-|  "G"    | to go to the end |
-|  "q"    | to quit |
+<table class="table table-striped">
+  <thead>
+    <tr><td>key</td><td>action</td></tr>
+  </thead>
+  <tbody>
+    <tr><td>"space"</td><td>to go forward</td></tr>
+    <tr><td>"b"</td><td>to go backwards</td></tr>
+    <tr><td>"g"</td><td>to go to the beginning</td></tr>
+    <tr><td>"G"</td><td>to go to the end</td></tr>
+    <tr><td>"q"</td><td>to quit</td></tr>
+  </tbody>
+</table>
 
 `less` also gives you a way of searching through files. Just hit the
 "/" key to begin a search. Enter the name of the word you would like
